@@ -22,7 +22,20 @@
     <favorites_list name="GoConcurrency" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="leakybuffer.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leakybuffer/leakybuffer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-46">
+              <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+              <folding>
+                <element signature="e#220#275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,6 +51,7 @@
         <option value="$PROJECT_DIR$/structchans/structchans.go" />
         <option value="$PROJECT_DIR$/rlimt1/rlimit1.go" />
         <option value="$PROJECT_DIR$/buffered/buffered.go" />
+        <option value="$PROJECT_DIR$/leakybuffer/leakybuffer.go" />
       </list>
     </option>
   </component>
@@ -81,24 +95,7 @@
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoConcurrency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoConcurrency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoConcurrency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -114,7 +111,7 @@
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
-  <component name="RunManager" selected="Go Single File.go run buffered.go">
+  <component name="RunManager" selected="Go Single File.go run leakybuffer.go">
     <configuration default="false" name="Build basics.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="GoConcurrency" />
       <working_directory value="$PROJECT_DIR$" />
@@ -138,6 +135,12 @@
       <module name="GoConcurrency" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/structchans/structchans.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run leakybuffer.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="GoConcurrency" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/leakybuffer/leakybuffer.go" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -213,18 +216,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Go Application.Build basics.go and run" />
       <item index="1" class="java.lang.String" itemvalue="Go Single File.go run buffered.go" />
       <item index="2" class="java.lang.String" itemvalue="Go Single File.go run rlimit1.go" />
       <item index="3" class="java.lang.String" itemvalue="Go Single File.go run structchans.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run leakybuffer.go" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run buffered.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run structchans.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run rlimit1.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Application.Build basics.go and run" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run leakybuffer.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run buffered.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run structchans.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run rlimit1.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Application.Build basics.go and run" />
       </list>
     </recent_temporary>
   </component>
@@ -242,22 +247,22 @@
       <option name="presentableId" value="Default" />
       <updated>1468313255751</updated>
       <workItem from="1468313257369" duration="1308000" />
-      <workItem from="1468314888156" duration="19742000" />
+      <workItem from="1468314888156" duration="25041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21050000" />
+    <option name="totallyTimeSpent" value="26349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1319" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6697531" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6697531" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7484568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -340,6 +345,16 @@
         <state relative-caret-position="828">
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leakybuffer/leakybuffer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+          <folding>
+            <element signature="e#220#275#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
