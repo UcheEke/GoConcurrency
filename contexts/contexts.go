@@ -24,14 +24,14 @@ func NewContext() *Context {
 }
 
 type Counter struct {
-    ctx Context
+    ctx *Context
     c chan int
     count int
 }
 
 func NewCounter(ctx *Context, start int) *Counter {
     counter := new(Counter)
-    counter.ctx = *ctx
+    counter.ctx = ctx
     counter.c = make(chan int)
     counter.count = start
 
