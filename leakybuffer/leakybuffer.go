@@ -32,7 +32,7 @@ var serverChan = make(chan *Buffer)
 var quit = make(chan bool)
 
 func dataGenerator() chan string {
-    filename := "/home/ekeu/Programming/Projects/GoConcurrency/leakybuffer/words.txt"
+    filename := "words.txt"
     fd, err := os.Open(filename)
     if err != nil {
         panic(err)
@@ -41,6 +41,7 @@ func dataGenerator() chan string {
     ch := make(chan string)
     sc := bufio.NewScanner(fd)
 
+    // Set up a concurrent function
     go func(){
         for sc.Scan() {
             ch <- sc.Text()
@@ -89,7 +90,7 @@ func server() {
                 default:
                 // Available channel is full, drop buffer for GC to clean up.
                 }
-        case <- quit:
+        case <- quit:  // Stop the server and clean up
             break serverLoop
         }
     }
