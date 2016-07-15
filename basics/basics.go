@@ -5,6 +5,8 @@ import (
     "time"
 )
 
+// delays: Using a delay to ensure the function that called the go routine
+// doesn't terminate before it has finished.
 func delays() {
     message := "This comes from a go routine!\n"
     go func(){
@@ -15,6 +17,7 @@ func delays() {
     fmt.Printf("This comes from the 'delays()' function thread\n")
 }
 
+// blockingChannels: uses a channel to block until it receives a message
 func blockingChannels() {
     ch := make(chan int)
     go func(){
@@ -27,6 +30,7 @@ func blockingChannels() {
     fmt.Println("Channel no longer blocks. 'blockingChannels()' Exiting")
 }
 
+// signalling: a second channel can be used to signal when a go routine can terminate
 func signalling(){
     ch := make(chan int)
     done := make(chan bool)

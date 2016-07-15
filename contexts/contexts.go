@@ -1,3 +1,11 @@
+/*
+    contexts.go
+
+    Illustration of a basic usage of contexts in concurrent programming. A context provides a read only channel
+    to signal when the processes using them can terminate.
+
+ */
+
 package main
 
 import (

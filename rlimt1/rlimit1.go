@@ -14,7 +14,7 @@ import (
     "math/rand"
 )
 
-// process takes in an int and prints its square
+// process takes an int and prints its square
 func process(ch chan int, id int, done chan int) {
     for x := range ch{
         t := time.Duration(rand.Intn(20))*time.Millisecond

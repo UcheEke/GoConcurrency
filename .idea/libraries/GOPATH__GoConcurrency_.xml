@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;GoConcurrency&gt;">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Go/src/git.eclipse.org" />
-      <root url="file://$PROJECT_DIR$/../../Go/src/golang.org" />
       <root url="file://$PROJECT_DIR$/../../Go/src/gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../../Go/src/golang.org" />
       <root url="file://$PROJECT_DIR$/../../Go/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../../Go/src/git.eclipse.org" />
     </CLASSES>
     <SOURCES>
       <root url="file://$PROJECT_DIR$/../../Go/src/git.eclipse.org" />
